@@ -1,0 +1,16 @@
+.card h3 {
+    height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.backdrop{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.288);
+    top: 0;
+    left: 0;
+    display: none;
+}
+.backdrop.active{
+    display: block;
+}
