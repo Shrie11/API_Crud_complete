@@ -68,7 +68,7 @@ const onupdateHnadler = () => {
 }
 
 const onRemove = (ele) => {
-    let removeId = localStorage.getItem('edit_id')
+    let removeId = ele.closest('.card').id
     let xhr = new XMLHttpRequest()
     let BASE_URL = 'https://jsonplaceholder.typicode.com'
     let API_URL = `${BASE_URL}/posts/${removeId}`
