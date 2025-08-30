@@ -59,6 +59,7 @@ const onupdateHnadler = () => {
         }
     };
     xhr.send(JSON.stringify(updatedObj));
+    cardform.reset()
     let Upcard = document.getElementById(updateId)
     Upcard.querySelector('.card-header h3').innerHTML = updatedObj.title
     Upcard.querySelector('.card-header h5').innerHTML = updatedObj.userId
@@ -127,6 +128,7 @@ const onsubmitHandler = (eve) => {
         userId: useridCtrl.value,
         id: '101'
     }
+    cardform.reset()
 
     xhr.send(JSON.stringify(cardObj));
 
